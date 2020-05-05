@@ -13,7 +13,8 @@
     "mkdirp": "0.5.1",
     "remarkable": "^1.6.2",
     "requirejs": "2.1.22",
-    "yargs": "7.0.2"
+    "yargs": "7.0.2",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "@alrra/travis-scripts": "1.1.1",
@@ -38,7 +39,9 @@
     "serve-static": "^1.10.0"
   },
   "scripts": {
-    "test": "grunt test --stack"
+    "test": "grunt test --stack",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "main": "./lib/cli",
   "bin": "./bin/modernizr",
@@ -103,5 +106,6 @@
       "grunt-eslint"
     ]
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
