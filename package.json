@@ -10,7 +10,7 @@
     "file": "0.2.2",
     "find-parent-dir": "0.3.0",
     "lodash": "4.17.4",
-    "mkdirp": "0.5.1",
+    "mkdirp": "0.5.2",
     "remarkable": "^1.6.2",
     "requirejs": "2.1.22",
     "yargs": "7.0.2"
